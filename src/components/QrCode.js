@@ -9,10 +9,14 @@ export default class Qrcode extends React.Component {
   render() {
     console.log(this.props);
     const full = this.state.base + this.props.token;
-    return (
-      <div>
-        <QRCode value={full} />
-      </div>
-    );
+    if (typeof this.props.token === "undefined") {
+      return <div>token was undefined</div>;
+    } else {
+      return (
+        <div>
+          <QRCode value={full} />
+        </div>
+      );
+    }
   }
 }

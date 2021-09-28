@@ -1,5 +1,6 @@
 import React from "react";
 import Qrcode from "./Qrcode";
+import StartButton from "./StartButton";
 
 const queryParams = new URLSearchParams(window.location.search);
 
@@ -29,6 +30,7 @@ export default class FetchQrLink extends React.Component {
   render() {
     return (
       <div>
+        <StartButton />
         {this.state.loading || !this.state.table ? (
           <div>loading...</div>
         ) : (
