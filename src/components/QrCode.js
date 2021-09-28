@@ -11,7 +11,6 @@ export default class Qrcode extends React.Component {
     const full = this.state.base + this.props.token;
     return (
       <div>
-        <h1>{this.props.token}</h1>
         <QRCode value={full} />
       </div>
     );

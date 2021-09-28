@@ -1,12 +1,16 @@
-import QRCode from "qrcode-react";
 import "./App.css";
+import Create from "./components/Create";
 import FetchQrLink from "./components/FetchQrLink";
-import Qrcode from "./components/Qrcode";
 
 function App() {
   return (
-    <div>
-      <FetchQrLink />
+    <div class="container">
+      <center>
+        <div class="vertical-center">
+          <Create />
+          <FetchQrLink />
+        </div>
+      </center>
     </div>
   );
 }
