@@ -1,5 +1,5 @@
 import React from "react";
-import QrCode from "./QrCode";
+import QrCode from "./Qrcode";
 import Button from "@mui/material/Button";
 import Create from "./Create";
 
