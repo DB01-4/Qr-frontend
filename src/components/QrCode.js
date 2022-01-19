@@ -3,7 +3,7 @@ import QRCode from "qrcode.react";
 
 export default class Qrcode extends React.Component {
   state = {
-    base: "https://24eat-lime.vercel.app/?key=",
+    base: "https://24-eat.vercel.app/?tablekey=",
   };
 
   render() {
