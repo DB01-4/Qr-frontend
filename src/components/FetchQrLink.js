@@ -1,6 +1,5 @@
 import React from "react";
-import Qrcode from "./Qrcode";
-import StartButton from "./StartButton";
+import QrCode from "./QrCode";
 import Button from "@mui/material/Button";
 import Create from "./Create";
 
@@ -57,7 +56,7 @@ export default class FetchQrLink extends React.Component {
               <div>
                 <h2>Scan QR code for the menu.</h2>
                 <div>
-                  <Qrcode token={this.state.table.link} />
+                  <QrCode token={this.state.table.link} />
                 </div>
                 <div>{this.state.table.link}</div>
               </div>
