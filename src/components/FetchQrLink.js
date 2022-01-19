@@ -1,6 +1,5 @@
 import React from "react";
 import Qrcode from "./Qrcode";
-import StartButton from "./StartButton";
 import Button from "@mui/material/Button";
 import Create from "./Create";
 
@@ -16,7 +15,8 @@ export default class FetchQrLink extends React.Component {
   };
 
   async componentDidMount() {
-    const url = "http://localhost:8083/api/qr/" + this.state.key;
+    const url =
+      "https://qr-service-mediaan.herokuapp.com/api/qr/" + this.state.key;
     const response = await fetch(url, {
       method: "get",
       headers: {
